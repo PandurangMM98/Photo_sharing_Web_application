@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>200</title>
+</head>
+<body>
+	<h1>200 OK</h1>
+	<p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action</p>
+
+
+	{% for value in templist %}
+			<p>{{value}}</p>	
+	{%endfor%}
+
+	{% for key, value in temp.items() %}
+			<p>{{key, value}}</p>	
+	{%endfor%}
+	
+
+	
+</body>
+</html>

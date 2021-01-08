@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<title>Index</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+
+		<style type="text/css">
+			body{
+				
+				background-image: url(/static/images/trial.jpg)
+			}
+			div {
+				width:100%;
+			}
+		    ul{
+		        padding: 0;
+		        list-style: none;
+		        
+		    }
+		    ul li{
+		        display: inline-block;
+		        position: relative;
+		        line-height: 21px;
+		        text-align: left;
+		    }
+		    ul li a{
+		        display: block;
+		        padding: 8px 25px;
+		        color: White;
+		        text-decoration: none;
+		        font-family: 'Oswald', sans-serif;
+
+		    }
+		    ul li a:hover{
+		        color: Red;
+		        background: Black;
+		        font-family: 'Oswald', sans-serif;
+
+
+		    }
+		    ul li ul.dropdown{
+		        min-width: 100%; /* Set width of the dropdown */
+		        background: Black;
+		        display: none;
+		        position: absolute;
+		        z-index: 999;
+		        left: 0;
+		        font-size: 14px;
+		    }
+		    ul li:hover ul.dropdown{
+		        display: block;	/* Display the dropdown */
+		    }
+		    ul li ul.dropdown li{
+		        display: block;
+		    }
+		    #dropdown {
+		    	position: relative;
+		    	text-align: right;
+		    	box-sizing: border-box;
+		    	right:10%;
+		    	padding-top: 10px;
+		    	padding-bottom: 10px;
+
+		    }
+		    .button {
+				  display: inline-block;
+				  border-radius: 4px;
+				  background-color: #B00D0D;
+				  border: none;
+				  color: #FFFFFF;
+				  text-align: center;
+				  font-size: 28px;
+				  padding: 20px;
+				  width: 200px;
+				  transition: all 0.5s;
+				  cursor: pointer;
+				  margin: 5px;
+				}
+
+			.button span {
+				  cursor: pointer;
+				  display: inline-block;
+				  position: relative;
+				  transition: 0.5s;
+				}
+
+			.button span:after {
+				  content: '\00bb';
+				  position: absolute;
+				  opacity: 0;
+				  top: 0;
+				  right: -20px;
+				  transition: 0.5s;
+				}
+
+			.button:hover span {
+				  padding-right: 25px;
+				}
+
+			.button:hover span:after {
+				  opacity: 1;
+				  right: 0;
+				}
+			table {
+			    border-collapse: collapse;
+			    width: 80%;
+
+			}
+
+			td {
+			    padding: 8px;
+			    text-align: left;
+			    border-bottom: 3px solid #F3F3F3;
+			    background-color: White;
+			    color:#20232d;
+			    font-family: 'Open Sans', sans-serif;
+			    font-size: 12px;
+
+			}
+			th{
+				font-weight: normal;
+				text-align: left;
+				color:grey;
+				padding:8px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="Spacer" style="height:25px"></div>
+		<div id = "dropdown">
+			<ul>
+		        <li><a href="/">HOME</a></li>
+		        <li><a href="/about">ABOUT</a></li>
+		        <li>
+		            <a>CATEGORY</a>
+		            <ul class="dropdown">
+		                <li><a href="/cat">ADD</a></li>
+		                <li><a href="/deletecat">DELETE</a></li>
+		            </ul>
+		        </li>
+		        <li>
+		        	<a>SIGNUP/DELETE</a>
+		            <ul class="dropdown">
+		                <li><a href="/signup">SIGNUP</a></li>
+		                <li><a href="/deleteuser">DELETE ACCOUNT?</a></li>
+		            </ul>
+		        </li>
+		        <li>
+		        	<a>ACTS</a>
+		        	<ul class="dropdown">
+		                <li><a href="/upload">UPLOAD</a></li>
+		                <li><a href="/deleteact">DELETE/UPVOTE</a></li>
+		                <li><a href="/querycat">QUERY</a></li>
+		                <li><a href="/queryrange">RANGE</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="/blog">BLOG</a></li>
+
+		    </ul>
+		</div>
+
+		<div style= "width:23%; height: 49.5px; position: absolute; padding-left: 10%;box-sizing: border-box;top:45px;">
+			<a href = "index.html" style = "position: absolute; font-family: 'Oswald', sans-serif;color: White; font-weight: bold;font-size: 20px;text-decoration: none; left: 65%;padding: 5px">SELFIE-LESS ACT</a>
+		</div>
+
+		
+
+		<div  style="width:80%;position: relative; left:10%;">
+		<h5 style="font-size: 50px;font-family:Oswald;color:white;"> Change Begins With You</h5>
+		<div class="list1" style="font-size: 20px;font-family:Oswald;color:white;position: relative;bottom: 60px;"> Here is Socialbrite’s guide to social action platforms, communities and organizations that help people take collective action for social good. (Note, this is not a list of worthy charities or causes but rather of organizations that help or enable other social good organizations.) Where available, we’ve included links to writeups on our site.
+
+		</div>
+		<img src = "/static/images/cat1.jpeg"  style="width:30%">
+		<img src = "/static/images/cat2.jpeg"  style="margin-left: 2%; width:30%">
+		<img src = "/static/images/cat3.jpeg"  style="margin-left: 2%; width:30%">
+
+		</div>
+		
+		<div style="background-color:Black; position: relative; bottom:0px;width: 100%;">
+			
+			
+		</div>
+		
+	</body>
+</html>

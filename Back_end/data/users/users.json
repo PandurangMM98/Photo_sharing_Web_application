@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "username": "manoj",
+            "password": "asgf"
+        },
+        {
+            "username": "manoj",
+            "password": "sjfgak"
+        },
+        {
+            "username": "chetan",
+            "password": "bvc"
+        },
+        {
+            "username": "jdhjfsgf",
+            "password": "vqwghfhjgds"
+        },
+        {
+            "username": "pmm",
+            "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef"
+        },
+        {
+            "username": "pandu",
+            "password": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220"
+        },
+        {
+            "username": "ma",
+            "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef"
+        },
+        {
+            "username": "pandurang",
+            "password": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220"
+        }
+    ]
+}

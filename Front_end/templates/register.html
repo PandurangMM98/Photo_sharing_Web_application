@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<title>Index</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="static/style.css" />
+    	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+   		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:800' rel='stylesheet' type='text/css'>
+
+
+		<style type="text/css">
+			body{
+				background-image: url(/static/images/trial.jpg)
+			}
+			div {
+				width:100%;
+			}
+		    ul{
+		        padding: 0;
+		        list-style: none;
+		        background-image: url(/static/images/trial.jpg)
+		    }
+		    ul li{
+		        display: inline-block;
+		        position: relative;
+		        line-height: 21px;
+		        text-align: left;
+		    }
+		    ul li a{
+		        display: block;
+		        padding: 8px 25px;
+		        color: White;
+		        text-decoration: none;
+		        font-family: 'Oswald', sans-serif;
+
+		    }
+		    ul li a:hover{
+		        color: Red;
+		        background: Black;
+		        font-family: 'Oswald', sans-serif;
+
+
+		    }
+		    ul li ul.dropdown{
+		        min-width: 100%; /* Set width of the dropdown */
+		        background: Black;
+		        display: none;
+		        position: absolute;
+		        z-index: 999;
+		        left: 0;
+		        font-size: 14px;
+		    }
+		    ul li:hover ul.dropdown{
+		        display: block;	/* Display the dropdown */
+		    }
+		    ul li ul.dropdown li{
+		        display: block;
+		    }
+		    #dropdown {
+		    	position: relative;
+		    	text-align: right;
+		    	box-sizing: border-box;
+		    	right:10%;
+		    	padding-top: 10px;
+		    	padding-bottom: 10px;
+
+		    }
+		    .button {
+				  display: inline-block;
+				  border-radius: 4px;
+				  background-color: #B00D0D;
+				  border: none;
+				  color: #FFFFFF;
+				  text-align: center;
+				  font-size: 28px;
+				  padding: 20px;
+				  width: 200px;
+				  transition: all 0.5s;
+				  cursor: pointer;
+				  margin: 5px;
+				}
+
+			.button span {
+				  cursor: pointer;
+				  display: inline-block;
+				  position: relative;
+				  transition: 0.5s;
+				}
+
+			.button span:after {
+				  content: '\00bb';
+				  position: absolute;
+				  opacity: 0;
+				  top: 0;
+				  right: -20px;
+				  transition: 0.5s;
+				}
+
+			.button:hover span {
+				  padding-right: 25px;
+				}
+
+			.button:hover span:after {
+				  opacity: 1;
+				  right: 0;
+				}
+			table {
+			    border-collapse: collapse;
+			    width: 80%;
+
+			}
+
+			td {
+			    padding: 8px;
+			    text-align: left;
+			    border-bottom: 3px solid #F3F3F3;
+			    background-color: White;
+			    color:#20232d;
+			    font-family: 'Open Sans', sans-serif;
+			    font-size: 12px;
+
+			}
+			th{
+				font-weight: normal;
+				text-align: left;
+				color:grey;
+				padding:8px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="Spacer" style="height:25px"></div>
+		<div id = "dropdown">
+			<ul>
+		        <li><a href="/">HOME</a></li>
+		        <li><a href="/about">ABOUT</a></li>
+		        <li>
+		            <a>CATEGORY</a>
+		            <ul class="dropdown">
+		                <li><a href="/cat">ADD</a></li>
+		                <li><a href="/deletecat">DELETE</a></li>
+		            </ul>
+		        </li>
+		        <li>
+		        	<a>SIGNUP/DELETE</a>
+		            <ul class="dropdown">
+		                <li><a href="/signup">SIGNUP</a></li>
+		                <li><a href="/deleteuser">DELETE ACCOUNT?</a></li>
+		            </ul>
+		        </li>
+		        <li>
+		        	<a>ACTS</a>
+		        	<ul class="dropdown">
+		                <li><a href="/upload">UPLOAD</a></li>
+		                <li><a href="/deleteact">DELETE/UPVOTE</a></li>
+		                <li><a href="/querycat">QUERY</a></li>
+		                <li><a href="/queryrange">RANGE</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="/blog">BLOG</a></li>
+
+		    </ul>
+		</div>
+
+		<div style= "width:23%; height: 49.5px; position: absolute; padding-left: 10%;box-sizing: border-box;top:45px;">
+			<img src = "/static/images/society.jpg" width = "61" height="61" style="position: absolute;">
+			<a href = "index.html" style = "position: absolute; font-family: 'Oswald', sans-serif;color: White; font-weight: bold;font-size: 20px;text-decoration: none; left: 65%;padding: 5px">SELFIE-LESS ACT</a>
+		</div>
+
+		
+
+		<div  style="width:80%;position: relative; left:10%; bottom: 10%;">
+			<h6 style="font-size: 50px;font-family:Oswald;color:white;"> Society worships those who are beautiful and puts down those aren't. Contribute to society.</h6>
+			
+		</div>
+		
+		<div id="container" style="width: 40%; height: 200px;position: relative; bottom: 20%">
+			   	<form method="POST" action="/adduser">
+			    	<p><input type="text" class="box" id="username" placeholder="ENTER USERNAME" name="username" /></p>
+			        <p><input type="password" class="box"  placeholder="ENTER PASSWORD" id="pass" name="password" /></p>
+			        <p style="text-align:left; position:relative;left:25%;"><input type="submit" id="button" /></p>
+			    </form>
+			</div>
+
+		<div style="background-color:Black; position: relative; bottom:0px;width: 100%;">
+			
+			<div style="position: relative;top: 70px;">
+				<img src = "/static/images/society.jpg" width = "61" height="61" style="position: relative;left:45%; top:25px;">
+				<a href = "index.html" style = "position: relative;left:45%; font-family: 'Oswald', sans-serif;color: White; font-weight: bold;font-size: 20px;text-decoration: none;padding: 5px;text-align:center;">SELFIE-LESS ACT</a>
+				<p style = "font-size: 16px; color:grey;position: relative;top: 20px;left:43%; width: 230px;text-align: center">© Copyright | SelfieLessAct 2019. All Rights Reserved.</p>
+				<p style = "font-size: 16px; color:grey;position: relative;top: 20px;left:39%; width: 340px;text-align: center">Developed by Nakshatra, Neha, Nesara and Omkar.</p>
+				<br><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
